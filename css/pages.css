@@ -19,7 +19,7 @@
 .hero { height: 100vh; min-height: 680px; position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden; background: var(--dp); }
 .hero-bg {
   position: absolute; inset: 0;
-  background: url('https://images.unsplash.com/photo-1519741497674-611481863552?w=1600&q=85') center/cover no-repeat;
+  background: url('https://iili.io/qaigRmx.jpg') center/cover no-repeat;
   opacity: .45; transform: scale(1.05); transition: transform 9s ease, opacity .8s;
 }
 .hero-bg.zoom   { transform: scale(1); }
@@ -36,7 +36,7 @@
 /* HOME — Feature split */
 .feat-split { display: grid; grid-template-columns: 1fr 1fr; }
 .feat-left  { padding: 80px 64px; background: var(--iv); }
-.feat-right { min-height: 480px; background: url('https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=900&q=80') center/cover; position: relative; }
+.feat-right { min-height: 480px; background: url('https://iili.io/qcZaKml.jpg') center/cover; position: relative; }
 .feat-right-ov { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(201,169,110,.1), transparent); }
 
 /* ── ABOUT ── */
