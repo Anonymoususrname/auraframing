@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aura Framing — Wedding &amp; Events</title>
+  <meta name="description" content="Aura Framing — Luxury wedding photography, videography and event management in Perur, Coimbatore, Tamil Nadu." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor"      id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- LOADER -->
+<div id="loader">
+  <img class="loader-logo" src="images/logo.png" alt="Aura Framing" onerror="this.style.display='none'" />
+  <div class="loader-brand">AURA FRAMING</div>
+  <div class="loader-sub">Wedding &amp; Event Management</div>
+  <div class="loader-line"></div>
+</div>
+
+<!-- PAGE TRANSITION CURTAIN -->
+<div id="curtain"></div>
+
+<!-- NAVIGATION -->
+<nav class="solid" id="navbar">
+  <a href="#" class="nav-logo" data-page="home">
+    <img class="nav-logo-img" src="images/logo.png" alt="Aura Framing" onerror="this.style.display='none'" />
+    <div class="nav-brand">AURA FRAMING<span>Wedding &amp; Events</span></div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#" data-page="home"     class="active">Home</a></li>
+    <li><a href="#" data-page="about">About</a></li>
+    <li><a href="#" data-page="services">Services</a></li>
+    <li><a href="#" data-page="packages">Packages</a></li>
+    <li><a href="#" data-page="careers">Careers</a></li>
+    <li><a href="#" data-page="booking">Book Now</a></li>
+    <li><a href="#" data-page="contact">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+  <button class="close-nav" id="closeNav" aria-label="Close menu">✕</button>
+</nav>
+
+
+<!-- ══════════════════════════════════════════
+     PAGE: HOME
+══════════════════════════════════════════ -->
+<div class="page active" id="page-home">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-logo-ring">
+        <img src="images/logo.png" alt="Aura Framing"
+             onerror="this.outerHTML='<span style=font-family:serif;color:var(--gd);font-size:1.4rem>AF</span>'" />
+      </div>
+      <span class="hero-eyebrow">Wedding &amp; Event Management</span>
+      <h1 class="hero-h1">AURA<br><em>FRAMING</em></h1>
+      <p class="hero-p">Crafting extraordinary celebrations where every detail tells your unique love story — beautifully framed, forever remembered.</p>
+      <div class="hero-btns">
+        <button class="btn-gold"  data-page="booking">Book a Consultation</button>
+        <button class="btn-ghost" data-page="packages">View Packages</button>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="hero-scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee">
+    <div class="mq-track">
+      <span class="mq-item">Wedding Photography<span class="mq-dot">✦</span></span>
+      <span class="mq-item">Pre &amp; Post Wedding Shoots<span class="mq-dot">✦</span></span>
+      <span class="mq-item">Candid Photography<span class="mq-dot">✦</span></span>
+      <span class="mq-item">Modelling Shoots<span class="mq-dot">✦</span></span>
+      <span class="mq-item">Branding Shoots<span class="mq-dot">✦</span></span>
+      <span class="mq-item">Digital Marketing<span class="mq-dot">✦</span></span>
+      <!-- duplicate for seamless loop -->
+      <span class="mq-item">Wedding Photography<span class="mq-dot">✦</span></span>
+      <span class="mq-item">Pre &amp; Post Wedding Shoots<span class="mq-dot">✦</span></span>
+      <span class="mq-item">Candid Photography<span class="mq-dot">✦</span></span>
+      <span class="mq-item">Modelling Shoots<span class="mq-dot">✦</span></span>
+      <span class="mq-item">Branding Shoots<span class="mq-dot">✦</span></span>
+      <span class="mq-item">Digital Marketing<span class="mq-dot">✦</span></span>
+    </div>
+  </div>
+
+  <!-- Feature split -->
+  <div class="feat-split">
+    <div class="feat-left reveal">
+      <span class="eyebrow">Our Philosophy</span>
+      <h2 class="h2" style="margin-bottom:20px">
+        Every love story deserves an <em>extraordinary</em> beginning.
+      </h2>
+      <p class="body-p">At Aura Framing, we believe your wedding is not just an event — it is the living expression of your love. We transform your dreams into breathtaking reality through world-class photography, videography, and event craftsmanship.</p>
+      <p class="body-p" style="margin-top:14px">Based in Perur, Coimbatore, we have spent 5 years capturing the most precious moments for couples across Tamil Nadu — every frame a work of art.</p>
+      <div class="stats-row">
+        <div><div class="stat-n">100+</div><div class="stat-l">Weddings Captured</div></div>
+        <div><div class="stat-n">87%</div><div class="stat-l">Client Satisfaction</div></div>
+        <div><div class="stat-n">5</div><div class="stat-l">Years Experience</div></div>
+      </div>
+    </div>
+    <div class="feat-right"><div class="feat-right-ov"></div></div>
+  </div>
+
+  <!-- Services preview -->
+  <div class="sec sec-center" style="padding-bottom:0; background:var(--cr)">
+    <span class="eyebrow">What We Offer</span>
+    <h2 class="h2">Services Tailored to <em>Your Vision</em></h2>
+  </div>
+  <div class="svc-grid" style="margin-top:36px">
+    <div class="svc-card reveal"><span class="svc-icon">💍</span><h3>Wedding Photography</h3><p>Full professional coverage of your wedding day — every ritual, emotion, and cherished moment beautifully captured.</p></div>
+    <div class="svc-card reveal"><span class="svc-icon">🎬</span><h3>Pre &amp; Post Wedding Shoot</h3><p>Romantic outdoor sessions before or after the big day — creative locations, golden light, memories that last forever.</p></div>
+    <div class="svc-card reveal"><span class="svc-icon">📸</span><h3>Modelling Shoot</h3><p>Professional portfolio shoots for aspiring and established models — powerful, editorial, and uniquely styled to you.</p></div>
+    <div class="svc-card reveal"><span class="svc-icon">🏢</span><h3>Branding Shoot</h3><p>Visual storytelling for your business — product photography, lifestyle shots, and cinematic brand films that make an impact.</p></div>
+    <div class="svc-card reveal"><span class="svc-icon">📱</span><h3>Digital Marketing</h3><p>Grow your brand online with strategic content creation, social media management, and targeted digital campaigns.</p></div>
+    <div class="svc-card reveal"><span class="svc-icon">🎥</span><h3>Candid Photography</h3><p>Natural, unposed moments captured authentically — the laughs, the tears, and the in-between magic that makes your story real.</p></div>
+  </div>
+
+  <!-- Testimonials -->
+  <div class="sec dark sec-center">
+    <span class="eyebrow">Stories of Love</span>
+    <h2 class="h2 light">What Our Couples Say</h2>
+    <p class="testi-q" id="tq">"Aura Framing captured our wedding beautifully — every frame told our story perfectly. The team was professional, warm, and made us feel completely at ease throughout the day."</p>
+    <span class="testi-a" id="ta">— Kavitha &amp; Murugan, Coimbatore 2024</span>
+    <div class="tdots">
+      <button class="tdot on" data-t="0"></button>
+      <button class="tdot"    data-t="1"></button>
+      <button class="tdot"    data-t="2"></button>
+    </div>
+  </div>
+
+  <!-- Gallery -->
+  <div class="gallery">
+    <div class="gal-item"><img src="https://images.unsplash.com/photo-1519741347686-c1e0aadf4611?w=600&q=80" alt="Wedding gallery" loading="lazy" /></div>
+    <div class="gal-item"><img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=600&q=80" alt="Wedding gallery" loading="lazy" /></div>
+    <div class="gal-item"><img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?w=600&q=80" alt="Wedding gallery" loading="lazy" /></div>
+    <div class="gal-item"><img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=600&q=80" alt="Wedding gallery" loading="lazy" /></div>
+  </div>
+
+  <footer>
+    <div class="foot-top">
+      <div>
+        <div class="foot-brand-row"><img class="foot-logo" src="images/logo.png" alt="" onerror="this.style.display='none'" /><span class="foot-brand-name">AURA FRAMING</span></div>
+        <p class="foot-tagline">Crafting extraordinary wedding memories in Perur, Coimbatore, Tamil Nadu.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Pages</h4>
+        <a href="#" data-page="home">Home</a>
+        <a href="#" data-page="about">About</a>
+        <a href="#" data-page="services">Services</a>
+        <a href="#" data-page="packages">Packages</a>
+        <a href="#" data-page="careers">Careers</a>
+        <a href="#" data-page="booking">Book Now</a>
+        <a href="#" data-page="contact">Contact</a>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <a href="mailto:auraframing22@gmail.com">auraframing22@gmail.com</a>
+        <a href="https://wa.me/917708697816">+91 77086 97816</a>
+        <h4 style="margin-top:18px">Follow</h4>
+        <a href="https://www.instagram.com/auraframing?igsh=MTE3azhlbG41MG1zZQ%3D%3D&utm_source=qr" target="_blank" rel="noopener">@auraframing ↗</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p class="foot-copy">© 2026 Aura Framing Events. All rights reserved.</p>
+      <a class="foot-ig" href="https://www.instagram.com/auraframing?igsh=MTE3azhlbG41MG1zZQ%3D%3D&utm_source=qr" target="_blank" rel="noopener">Instagram ↗</a>
+    </div>
+  </footer>
+</div><!-- /page-home -->
+
+
+<!-- ══════════════════════════════════════════
+     PAGE: ABOUT
+══════════════════════════════════════════ -->
+<div class="page" id="page-about">
+  <div class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1600&q=80')"></div>
+    <div class="page-hero-ov"></div>
+    <div class="page-hero-content">
+      <div class="page-hero-badge">Our Story</div>
+      <h1 class="page-hero-title">We Are <em>Aura Framing</em></h1>
+    </div>
+  </div>
+
+  <div class="about-split">
+    <div class="about-txt reveal">
+      <span class="eyebrow">Since 2019</span>
+      <h2 class="h2" style="margin-bottom:22px">Born from a <em>love</em> of love.</h2>
+      <p class="body-p">Aura Framing was founded with a single belief — every couple deserves a wedding captured in a way that perfectly reflects their unique love story. What began as a boutique photography studio in Perur, Coimbatore has grown into a trusted name for weddings and creative shoots across Tamil Nadu.</p>
+      <p class="body-p" style="margin-top:14px">Our passionate team brings together expertise in photography, videography, branding, and digital marketing — united by one purpose: to make your most important moments extraordinary in every way.</p>
+      <p class="body-p" style="margin-top:14px">We don't just capture events. We frame memories, preserve emotions, and create timeless visual stories of the most beautiful chapters of your life.</p>
+    </div>
+    <div class="about-img-wrap">
+      <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=900&q=80" alt="Our team" loading="lazy" />
+      <div class="about-caption">"Every detail is a love letter to your story."</div>
+    </div>
+  </div>
+
+  <!-- Values -->
+  <div class="sec sec-center" style="background:var(--iv); padding-bottom:0">
+    <span class="eyebrow">Our Values</span>
+    <h2 class="h2">What Drives <em>Everything</em> We Do</h2>
+  </div>
+  <div class="vals-grid">
+    <div class="val-card reveal"><div class="val-n">01</div><h3>Intentionality</h3><p>Every shot, every frame rooted in your unique love story and what matters most to you.</p></div>
+    <div class="val-card reveal"><div class="val-n">02</div><h3>Excellence</h3><p>We hold ourselves to an uncompromising standard. Good enough is never enough for your day.</p></div>
+    <div class="val-card reveal"><div class="val-n">03</div><h3>Empathy</h3><p>We listen deeply and translate your vision into imagery that feels truly, profoundly yours.</p></div>
+    <div class="val-card reveal"><div class="val-n">04</div><h3>Artistry</h3><p>We approach every moment as an opportunity for genuine creative expression and beauty.</p></div>
+  </div>
+
+  <!-- Team -->
+  <div class="sec reveal">
+    <span class="eyebrow">The People</span>
+    <h2 class="h2">Meet the <em>Visionaries</em></h2>
+    <div class="team-grid">
+      <div class="team-card reveal">
+        <div class="team-img"><img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&q=80" alt="Karthik Raj" loading="lazy" /></div>
+        <h3>Karthik Raj</h3><div class="team-role">Founder &amp; Lead Photographer</div>
+      </div>
+      <div class="team-card reveal">
+        <div class="team-img"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="Surya Kumar" loading="lazy" /></div>
+        <h3>Surya Kumar</h3><div class="team-role">Cinematographer &amp; Editor</div>
+      </div>
+      <div class="team-card reveal">
+        <div class="team-img"><img src="https://images.unsplash.com/photo-1494790108755-2616b612b5bc?w=600&q=80" alt="Priya Devi" loading="lazy" /></div>
+        <h3>Priya Devi</h3><div class="team-role">Creative &amp; Branding Lead</div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="foot-top">
+      <div><div class="foot-brand-row"><img class="foot-logo" src="images/logo.png" alt="" onerror="this.style.display='none'" /><span class="foot-brand-name">AURA FRAMING</span></div><p class="foot-tagline">Based in Perur, Coimbatore, Tamil Nadu.</p></div>
+      <div class="foot-col"><h4>Navigate</h4><a href="#" data-page="home">Home</a><a href="#" data-page="services">Services</a><a href="#" data-page="packages">Packages</a><a href="#" data-page="booking">Book Now</a><a href="#" data-page="contact">Contact</a></div>
+      <div class="foot-col"><h4>Contact</h4><a href="mailto:auraframing22@gmail.com">auraframing22@gmail.com</a><a href="https://wa.me/917708697816">+91 77086 97816</a></div>
+    </div>
+    <div class="foot-bottom"><p class="foot-copy">© 2026 Aura Framing Events. All rights reserved.</p></div>
+  </footer>
+</div><!-- /page-about -->
+
+
+<!-- ══════════════════════════════════════════
+     PAGE: SERVICES
+══════════════════════════════════════════ -->
+<div class="page" id="page-services">
+  <div class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=1600&q=80')"></div>
+    <div class="page-hero-ov"></div>
+    <div class="page-hero-content">
+      <div class="page-hero-badge">What We Offer</div>
+      <h1 class="page-hero-title">Our <em>Services</em></h1>
+    </div>
+  </div>
+
+  <div class="svc-rows-wrap">
+
+    <!-- 1. Wedding Planning -->
+    <div class="svc-row reveal">
+      <div class="svc-row-img">
+        <img src="https://images.unsplash.com/photo-1519741347686-c1e0aadf4611?w=900&q=80" alt="Wedding Planning" loading="lazy" />
+        <div class="svc-tag">Wedding Planning</div>
+      </div>
+      <div class="svc-txt">
+        <h2>Complete Wedding <em>Planning</em></h2>
+        <p>A fully immersive partnership where we manage every aspect of your wedding from the first meeting to the final farewell. You dream it; we build it.</p>
+        <p>From vendor negotiations and venue selection to timeline management and day-of coordination, our team is your dedicated concierge throughout the entire journey.</p>
+        <span class="inc-label">Includes</span>
+        <div class="inc-tags">
+          <span class="inc-tag">Venue Sourcing</span>
+          <span class="inc-tag">Vendor Management</span>
+          <span class="inc-tag">Budget Planning</span>
+          <span class="inc-tag">Timeline Creation</span>
+          <span class="inc-tag">Day-of Coordination</span>
+          <span class="inc-tag">Guest Management</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Branding Shoot -->
+    <div class="svc-row reveal">
+      <div class="svc-txt">
+        <h2>Branding <em>Shoot</em></h2>
+        <p>A branding shoot helps businesses tell their story through powerful visuals. We capture authentic images that represent your brand identity, values, and professionalism.</p>
+        <p>Whether it's for websites, social media, or marketing campaigns, our branding photography creates a consistent and impactful visual presence for your business.</p>
+        <span class="inc-label">Includes</span>
+        <div class="inc-tags">
+          <span class="inc-tag">Product Photography</span>
+          <span class="inc-tag">Social Media Content Creation</span>
+          <span class="inc-tag">Lifestyle Shots</span>
+          <span class="inc-tag">Cinematic Brand Video</span>
+          <span class="inc-tag">Business Portrait</span>
+        </div>
+      </div>
+      <div class="svc-row-img">
+        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=900&q=80" alt="Branding Shoot" loading="lazy" />
+        <div class="svc-tag">Branding Shoot</div>
+      </div>
+    </div>
+
+    <!-- 3. Photography & Cinematography -->
+    <div class="svc-row reveal">
+      <div class="svc-row-img">
+        <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=900&q=80" alt="Photography" loading="lazy" />
+        <div class="svc-tag">Photography &amp; Cinematography</div>
+      </div>
+      <div class="svc-txt">
+        <h2>Photography &amp; <em>Cinematography</em></h2>
+        <p>We work exclusively with award-winning visual artists who craft a visual narrative as timeless as your love itself.</p>
+        <p>Our packages include pre-wedding shoots, same-day edits, and cinematic highlight films that will move you to tears every time you watch them.</p>
+        <span class="inc-label">Includes</span>
+        <div class="inc-tags">
+          <span class="inc-tag">Pre-wedding Shoot</span>
+          <span class="inc-tag">Full Day Coverage</span>
+          <span class="inc-tag">Highlight Reel</span>
+          <span class="inc-tag">Drone Footage</span>
+          <span class="inc-tag">Photo Album</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Modelling Shoot -->
+    <div class="svc-row reveal">
+      <div class="svc-txt">
+        <h2>Modelling &amp; <em>Portfolio Shoot</em></h2>
+        <p>Whether you're building your first portfolio or refreshing your look, our modelling shoots are designed to bring out your best — confident, authentic, and impactful.</p>
+        <p>We work with you on concept, styling guidance, and location selection to create images that open doors and leave lasting impressions.</p>
+        <span class="inc-label">Includes</span>
+        <div class="inc-tags">
+          <span class="inc-tag">Portfolio Build</span>
+          <span class="inc-tag">Concept Styling</span>
+          <span class="inc-tag">Indoor &amp; Outdoor</span>
+          <span class="inc-tag">Edited Selects</span>
+          <span class="inc-tag">High-Res Delivery</span>
+        </div>
+      </div>
+      <div class="svc-row-img">
+        <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=900&q=80" alt="Modelling Shoot" loading="lazy" />
+        <div class="svc-tag">Modelling Shoot</div>
+      </div>
+    </div>
+
+  </div><!-- /svc-rows-wrap -->
+
+  <footer>
+    <div class="foot-top">
+      <div><div class="foot-brand-row"><img class="foot-logo" src="images/logo.png" alt="" onerror="this.style.display='none'" /><span class="foot-brand-name">AURA FRAMING</span></div><p class="foot-tagline">Services tailored to every vision.</p></div>
+      <div class="foot-col"><h4>Navigate</h4><a href="#" data-page="home">Home</a><a href="#" data-page="packages">Packages</a><a href="#" data-page="booking">Book Now</a><a href="#" data-page="contact">Contact</a></div>
+      <div class="foot-col"><h4>Contact</h4><a href="mailto:auraframing22@gmail.com">auraframing22@gmail.com</a><a href="https://wa.me/917708697816">+91 77086 97816</a></div>
+    </div>
+    <div class="foot-bottom"><p class="foot-copy">© 2026 Aura Framing Events. All rights reserved.</p></div>
+  </footer>
+</div><!-- /page-services -->
+
+
+<!-- ══════════════════════════════════════════
+     PAGE: PACKAGES
+══════════════════════════════════════════ -->
+<div class="page" id="page-packages">
+  <div class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1600&q=80')"></div>
+    <div class="page-hero-ov"></div>
+    <div class="page-hero-content">
+      <div class="page-hero-badge">Investment</div>
+      <h1 class="page-hero-title">Our <em>Packages</em></h1>
+    </div>
+  </div>
+
+  <div class="sec sec-center" style="padding-bottom:8px">
+    <span class="eyebrow">Choose Your Experience</span>
+    <h2 class="h2">Tailored for Every <em>Love Story</em></h2>
+    <p class="body-p" style="max-width:560px; margin:16px auto 0">Our photography and videography packages preserve every precious moment — from the ceremony to the final celebration — beautifully and completely.</p>
+  </div>
+
+  <div class="sec" style="padding-top:32px">
+
+    <!-- Package 01 — Classic -->
+    <div class="pkg reveal">
+      <div class="pkg-lft">
+        <div class="pkg-num">01</div>
+        <span class="pkg-tier">Classic</span>
+        <div class="pkg-price">₹37,000</div>
+        <div class="pkg-sub">All-inclusive package</div>
+        <p class="pkg-desc">Complete traditional coverage — everything beautifully documented on your wedding and reception day, with timeless prints and keepsakes delivered after the event.</p>
+        <button class="pkg-btn" data-page="booking">Book This Package</button>
+      </div>
+      <div class="pkg-rgt">
+        <span class="pkg-cat">📷 Wedding &amp; Reception Coverage</span>
+        <div class="pkg-items" style="margin-bottom:20px">
+          <div class="pkg-item"><span class="pkg-dot">✦</span><div><strong>1 Traditional Photo</strong><p>Full professional photography of wedding &amp; reception</p></div></div>
+          <div class="pkg-item"><span class="pkg-dot">✦</span><div><strong>1 Traditional Video</strong><p>Complete videography of ceremony and reception</p></div></div>
+        </div>
+        <span class="pkg-cat">🎁 After Event Deliverables</span>
+        <div class="pkg-items" style="margin-bottom:20px">
+          <div class="pkg-item"><span class="pkg-dot">✦</span><div><strong>50-Sheet Album</strong><p>Premium printed album with 50 beautifully curated sheets</p></div></div>
+          <div class="pkg-item"><span class="pkg-dot">✦</span><div><strong>Full HD Video</strong><p>Edited full-length HD wedding film, digital delivery</p></div></div>
+        </div>
+        <span class="pkg-cat">🎀 Complimentary Gifts</span>
+        <div class="pkg-items">
+          <div class="pkg-item"><span class="pkg-dot">✦</span><div><strong>12×18 Frame — 1</strong><p>High-quality printed &amp; framed favourite moment</p></div></div>
+          <div class="pkg-item"><span class="pkg-dot">✦</span><div><strong>20×18 Frame — 1</strong><p>Large statement framed print for your home</p></div></div>
+          <div class="pkg-item"><span class="pkg-dot">✦</span><div><strong>Pen Drive — 1</strong><p>All photos &amp; videos on a branded pen drive</p></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Package 02 — Premium (featured) -->
+    <div class="pkg feat reveal">
+      <div class="pkg-pop">Most Popular</div>
+      <div class="pkg-lft">
+        <div class="pkg-num">02</div>
+        <span class="pkg-tier">Premium</span>
+        <div class="pkg-price">₹67,000</div>
+        <div class="pkg-sub">All-inclusive package</div>
+        <p class="pkg-desc">Our most complete package — full traditional coverage plus candid photography and a stunning outdoor shoot. Every moment, from every angle, preserved perfectly.</p>
+        <button class="pkg-btn" data-page="booking">Book This Package</button>
+      </div>
+      <div class="pkg-rgt">
+        <span class="pkg-cat">📷 Wedding &amp; Reception Coverage</span>
+        <div class="pkg-items" style="margin-bottom:20px">
+          <div class="pkg-item"><span class="pkg-dot">✦</span><div><strong>1 Traditional Photo</strong><p>Full professional photography of wedding &amp; reception</p></div></div>
+          <div class="pkg-item"><span class="pkg-dot">✦</span><div><strong>1 Traditional Video</strong><p>Complete videography of ceremony and reception</p></div></div>
+          <div class="pkg-item"><span class="pkg-dot">✦</span><div><strong>1 Candid Photo</strong><p>Natural unposed photography capturing real emotions</p></div></div>
+          <div class="pkg-item"><span class="pkg-dot">✦</span><div><strong>1 Outdoor Shoot</strong><p>Creative outdoor session on your wedding day</p></div></div>
+        </div>
+        <span class="pkg-cat">🎁 After Event Deliverables</span>
+        <div class="pkg-items" style="margin-bottom:20px">
+          <div class="pkg-item"><span class="pkg-dot">✦</span><div><strong>Premium 60-Page Album</strong><p>Luxury flush-mount album, 60 pages of finest moments</p></div></div>
+          <div class="pkg-item"><span class="pkg-dot">✦</span><div><strong>Full HD Video</strong><p>Professionally edited full-length HD wedding film</p></div></div>
+        </div>
+        <span class="pkg-cat">🎀 Complimentary Gifts</span>
+        <div class="pkg-items">
+          <div class="pkg-item"><span class="pkg-dot">✦</span><div><strong>Outdoor Shoot Session</strong><p>Pre-wedding or post-wedding — your choice</p></div></div>
+          <div class="pkg-item"><span class="pkg-dot">✦</span><div><strong>12×18 Frame — 1</strong><p>Beautifully printed &amp; framed favourite moment</p></div></div>
+          <div class="pkg-item"><span class="pkg-dot">✦</span><div><strong>18×20 Frame — 1</strong><p>Large statement framed print for your home</p></div></div>
+          <div class="pkg-item"><span class="pkg-dot">✦</span><div><strong>Pen Drive — 1</strong><p>All photos &amp; videos on branded pen drive</p></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Package 03 — Coming Soon -->
+    <div class="pkg pkg-coming reveal">
+      <div class="pkg-lft">
+        <div class="pkg-num">03</div>
+        <span class="pkg-tier">Gold</span>
+        <div class="pkg-price pkg-price-soon">Coming Soon</div>
+        <div class="pkg-sub">Details being finalised</div>
+        <p class="pkg-desc">Our third package is being carefully crafted. Contact us to be notified on launch or to discuss a custom quote for your needs.</p>
+        <button class="pkg-btn" data-page="contact">Get Notified</button>
+      </div>
+      <div class="pkg-rgt" style="display:flex; align-items:center; justify-content:center">
+        <div>
+          <div class="pkg-coming-star">✦</div>
+          <p class="pkg-coming-text">Package details arriving soon. Reach out for custom pricing tailored to your vision.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Package 04 — Coming Soon -->
+    <div class="pkg pkg-coming reveal">
+      <div class="pkg-lft">
+        <div class="pkg-num">04</div>
+        <span class="pkg-tier">Prestige</span>
+        <div class="pkg-price pkg-price-soon">Coming Soon</div>
+        <div class="pkg-sub">Details being finalised</div>
+        <p class="pkg-desc">Our ultimate luxury package — multi-day coverage, cinematic film, and every premium add-on included. Launching very soon.</p>
+        <button class="pkg-btn" data-page="contact">Join Waitlist</button>
+      </div>
+      <div class="pkg-rgt" style="display:flex; align-items:center; justify-content:center">
+        <div>
+          <div class="pkg-coming-star">✦</div>
+          <p class="pkg-coming-text">Our most exclusive package. Join the waitlist to be first to know.</p>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /sec -->
+
+  <!-- CTA strip -->
+  <div class="cta-strip">
+    <span class="eyebrow">Not Sure Which Package?</span>
+    <h2 class="h2 light">Let us help you <em>decide</em></h2>
+    <p>Book a free consultation — we'll recommend the perfect package for your vision and budget.</p>
+    <button class="btn-gold" data-page="booking">Book Free Consultation</button>
+  </div>
+
+  <!-- FAQ -->
+  <div class="sec ivory">
+    <div class="faq-wrap">
+      <span class="eyebrow">Common Questions</span>
+      <h2 class="h2" style="margin-bottom:32px">Package <em>FAQs</em></h2>
+      <div class="faq"><div class="faq-q">What is the difference between Traditional and Candid photography? <span class="faq-icon">+</span></div><div class="faq-a">Traditional photography covers key posed moments — rituals, family portraits, and formal shots. Candid captures natural, unposed emotions and behind-the-scenes moments throughout the day.</div></div>
+      <div class="faq"><div class="faq-q">When will I receive my album and video? <span class="faq-icon">+</span></div><div class="faq-a">Albums and edited videos are typically delivered within 4–6 weeks after the wedding. We keep you updated throughout the editing process.</div></div>
+      <div class="faq"><div class="faq-q">Can the outdoor shoot be done before the wedding? <span class="faq-icon">+</span></div><div class="faq-a">Yes — the outdoor shoot in Package 02 can be done as a pre-wedding or post-wedding session, entirely at your preference and convenience.</div></div>
+      <div class="faq"><div class="faq-q">Can I customise a package? <span class="faq-icon">+</span></div><div class="faq-a">Absolutely. All packages can be adjusted. Contact us and we'll create a tailored quote to match exactly what you need.</div></div>
+      <div class="faq"><div class="faq-q">How do I confirm my booking? <span class="faq-icon">+</span></div><div class="faq-a">WhatsApp us at +91 77086 97816 or fill the booking form. We'll confirm your date and send you the next steps right away.</div></div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="foot-top">
+      <div><div class="foot-brand-row"><img class="foot-logo" src="images/logo.png" alt="" onerror="this.style.display='none'" /><span class="foot-brand-name">AURA FRAMING</span></div><p class="foot-tagline">A package for every love story.</p></div>
+      <div class="foot-col"><h4>Navigate</h4><a href="#" data-page="home">Home</a><a href="#" data-page="about">About</a><a href="#" data-page="services">Services</a><a href="#" data-page="booking">Book Now</a><a href="#" data-page="contact">Contact</a></div>
+      <div class="foot-col"><h4>Contact</h4><a href="mailto:auraframing22@gmail.com">auraframing22@gmail.com</a><a href="https://wa.me/917708697816">+91 77086 97816</a></div>
+    </div>
+    <div class="foot-bottom"><p class="foot-copy">© 2026 Aura Framing Events. All rights reserved.</p></div>
+  </footer>
+</div><!-- /page-packages -->
+
+
+<!-- ══════════════════════════════════════════
+     PAGE: CAREERS
+══════════════════════════════════════════ -->
+<div class="page" id="page-careers">
+  <div class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1600&q=80')"></div>
+    <div class="page-hero-ov"></div>
+    <div class="page-hero-content">
+      <div class="page-hero-badge">Join the Team</div>
+      <h1 class="page-hero-title">Build a <em>Career</em> You Love</h1>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="careers-two-col">
+      <div class="reveal">
+        <span class="eyebrow">Why Aura Framing</span>
+        <h2 class="h2" style="margin-bottom:18px">Work where <em>passion</em> meets purpose.</h2>
+        <p class="body-p">At Aura Framing, we're a creative family united by one belief — every couple deserves an extraordinary beginning. We're always looking for passionate, talented individuals who want to make a real difference through exceptional craftsmanship.</p>
+        <p class="body-p" style="margin-top:14px">Whether you're a seasoned professional or a fresh creative talent, we offer an environment where your growth is our priority and your work creates genuine joy in the world.</p>
+      </div>
+      <div class="perks-grid reveal">
+        <div class="perk"><h4>Creative Freedom</h4><p>Bold ideas welcomed and rewarded at every level.</p></div>
+        <div class="perk"><h4>Learning Budget</h4><p>Annual stipend for workshops &amp; industry events.</p></div>
+        <div class="perk"><h4>Flexible Culture</h4><p>Flexible hours and genuine work-life integration.</p></div>
+        <div class="perk"><h4>Health &amp; Wellness</h4><p>Comprehensive insurance for all permanent staff.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec ivory reveal">
+    <span class="eyebrow">Open Positions</span>
+    <h2 class="h2" style="margin-bottom:32px">Current <em>Openings</em></h2>
+    <div class="job-row"><div><div class="job-t">Wedding Photographer</div><div class="job-d">Photography</div></div><div class="job-tp">Freelance · Coimbatore</div><button class="job-apply">Apply Now →</button></div>
+    <div class="job-row"><div><div class="job-t">Videographer / Editor</div><div class="job-d">Videography</div></div><div class="job-tp">Full-time · Coimbatore</div><button class="job-apply">Apply Now →</button></div>
+    <div class="job-row"><div><div class="job-t">Branding Photographer</div><div class="job-d">Branding &amp; Commercial</div></div><div class="job-tp">Freelance · Coimbatore</div><button class="job-apply">Apply Now →</button></div>
+    <div class="job-row"><div><div class="job-t">Social Media Creator</div><div class="job-d">Digital Marketing</div></div><div class="job-tp">Full-time · Remote</div><button class="job-apply">Apply Now →</button></div>
+    <div class="job-row"><div><div class="job-t">Client Relations Executive</div><div class="job-d">Client Management</div></div><div class="job-tp">Full-time · Coimbatore</div><button class="job-apply">Apply Now →</button></div>
+  </div>
+
+  <div class="sec">
+    <span class="eyebrow">Application</span>
+    <h2 class="h2" style="margin-bottom:28px">Apply <em>Today</em></h2>
+    <div style="max-width:620px">
+      <div class="f-row">
+        <div class="f-group"><label class="f-label">First Name</label><input class="f-input" type="text" placeholder="Your first name" /></div>
+        <div class="f-group"><label class="f-label">Last Name</label><input class="f-input" type="text" placeholder="Your last name" /></div>
+      </div>
+      <div class="f-group"><label class="f-label">Email Address</label><input class="f-input" type="email" placeholder="your@email.com" /></div>
+      <div class="f-group">
+        <label class="f-label">Position Applying For</label>
+        <select class="f-select">
+          <option value="">Select a position</option>
+          <option>Wedding Photographer</option>
+          <option>Videographer / Editor</option>
+          <option>Branding Photographer</option>
+          <option>Social Media Creator</option>
+          <option>Client Relations Executive</option>
+        </select>
+      </div>
+      <div class="f-group"><label class="f-label">Why Aura Framing?</label><textarea class="f-textarea" placeholder="Tell us what drives you and why you'd love to join our team..."></textarea></div>
+      <button class="btn-sub" id="careerSubmit">Submit Application</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="foot-top">
+      <div><div class="foot-brand-row"><img class="foot-logo" src="images/logo.png" alt="" onerror="this.style.display='none'" /><span class="foot-brand-name">AURA FRAMING</span></div><p class="foot-tagline">Join a team that creates magic for a living.</p></div>
+      <div class="foot-col"><h4>Navigate</h4><a href="#" data-page="home">Home</a><a href="#" data-page="services">Services</a><a href="#" data-page="packages">Packages</a><a href="#" data-page="contact">Contact</a></div>
+      <div class="foot-col"><h4>Contact</h4><a href="mailto:auraframing22@gmail.com">auraframing22@gmail.com</a><a href="https://wa.me/917708697816">+91 77086 97816</a></div>
+    </div>
+    <div class="foot-bottom"><p class="foot-copy">© 2026 Aura Framing Events. All rights reserved.</p></div>
+  </footer>
+</div><!-- /page-careers -->
+
+
+<!-- ══════════════════════════════════════════
+     PAGE: BOOKING
+══════════════════════════════════════════ -->
+<div class="page" id="page-booking">
+  <div class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1507504031003-b417219a0fde?w=1600&q=80')"></div>
+    <div class="page-hero-ov"></div>
+    <div class="page-hero-content">
+      <div class="page-hero-badge">Reserve Your Date</div>
+      <h1 class="page-hero-title">Begin Your <em>Story</em></h1>
+    </div>
+  </div>
+
+  <div class="sec">
+    <span class="eyebrow">Consultation Request</span>
+    <h2 class="h2" style="margin-bottom:36px">Let's Plan Something <em>Extraordinary</em></h2>
+    <div class="book-grid">
+      <!-- Left: steps + form -->
+      <div>
+        <div style="margin-bottom:36px">
+          <div class="bstep"><div class="bstep-n">01</div><div><h4>Fill the Form</h4><p>Share your vision, date, and ideas so we can prepare for our first meeting.</p></div></div>
+          <div class="bstep"><div class="bstep-n">02</div><div><h4>Free Consultation</h4><p>A call with your dedicated planner to explore every possibility.</p></div></div>
+          <div class="bstep"><div class="bstep-n">03</div><div><h4>Custom Proposal</h4><p>A bespoke proposal tailored to your dreams within 5 business days.</p></div></div>
+        </div>
+        <div class="f-row">
+          <div class="f-group"><label class="f-label">Your Name</label><input class="f-input" type="text" placeholder="Full name" /></div>
+          <div class="f-group"><label class="f-label">Partner's Name</label><input class="f-input" type="text" placeholder="Full name" /></div>
+        </div>
+        <div class="f-row">
+          <div class="f-group"><label class="f-label">Email</label><input class="f-input" type="email" placeholder="your@email.com" /></div>
+          <div class="f-group"><label class="f-label">Phone / WhatsApp</label><input class="f-input" type="tel" placeholder="+91 77086 97816" /></div>
+        </div>
+        <div class="f-row">
+          <div class="f-group"><label class="f-label">Wedding Date</label><input class="f-input" type="date" /></div>
+          <div class="f-group">
+            <label class="f-label">Package</label>
+            <select class="f-select">
+              <option value="">Select a package</option>
+              <option>Classic — ₹37,000</option>
+              <option>Premium — ₹67,000</option>
+              <option>Not sure yet — advise me</option>
+            </select>
+          </div>
+        </div>
+        <div class="f-group"><label class="f-label">Tell Us About Your Vision</label><textarea class="f-textarea" placeholder="Your dream wedding, location, special moments to capture..."></textarea></div>
+        <button class="btn-sub" id="bookingSubmit">Request Consultation</button>
+      </div>
+      <!-- Right: info cards -->
+      <div>
+        <div class="icard"><h4>📞 Prefer to Call?</h4><p>Mon–Sat, 10am–7pm. Call or WhatsApp us directly at +91 77086 97816.</p></div>
+        <div class="icard"><h4>📅 Book in Advance</h4><p>We accept limited bookings per season. Enquire early to secure your preferred date.</p></div>
+        <div class="icard"><h4>📍 Our Location</h4><p>Perur, Coimbatore, Tamil Nadu. We serve clients across Tamil Nadu and beyond.</p></div>
+        <div class="icard"><h4>💬 Quick Response</h4><p>We respond within 24 hours. For urgent enquiries, WhatsApp us directly.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="foot-top">
+      <div><div class="foot-brand-row"><img class="foot-logo" src="images/logo.png" alt="" onerror="this.style.display='none'" /><span class="foot-brand-name">AURA FRAMING</span></div><p class="foot-tagline">Your extraordinary day begins with a conversation.</p></div>
+      <div class="foot-col"><h4>Navigate</h4><a href="#" data-page="home">Home</a><a href="#" data-page="packages">Packages</a><a href="#" data-page="services">Services</a><a href="#" data-page="contact">Contact</a></div>
+      <div class="foot-col"><h4>Contact</h4><a href="mailto:auraframing22@gmail.com">auraframing22@gmail.com</a><a href="https://wa.me/917708697816">+91 77086 97816</a></div>
+    </div>
+    <div class="foot-bottom"><p class="foot-copy">© 2026 Aura Framing Events. All rights reserved.</p></div>
+  </footer>
+</div><!-- /page-booking -->
+
+
+<!-- ══════════════════════════════════════════
+     PAGE: CONTACT
+══════════════════════════════════════════ -->
+<div class="page" id="page-contact">
+  <div class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1469371670807-013ccf25f16a?w=1600&q=80')"></div>
+    <div class="page-hero-ov"></div>
+    <div class="page-hero-content">
+      <div class="page-hero-badge">Get in Touch</div>
+      <h1 class="page-hero-title">We'd Love to <em>Hear From You</em></h1>
+    </div>
+  </div>
+
+  <div class="sec">
+    <span class="eyebrow">Connect</span>
+    <h2 class="h2" style="margin-bottom:36px">Let's Start a <em>Conversation</em></h2>
+    <div class="contact-grid">
+      <!-- Left: details -->
+      <div class="reveal">
+        <div class="c-item"><span class="c-lbl">Studio Address</span><div class="c-val">Perur, Coimbatore<br />Tamil Nadu — 641 010</div></div>
+        <div class="c-item"><span class="c-lbl">Email</span><div class="c-val"><a href="mailto:auraframing22@gmail.com">auraframing22@gmail.com</a></div></div>
+        <div class="c-item"><span class="c-lbl">Phone</span><div class="c-val"><a href="tel:+917708697816">+91 77086 97816</a></div></div>
+        <div class="c-item"><span class="c-lbl">WhatsApp</span><div class="c-val"><a href="https://wa.me/917708697816">+91 77086 97816</a></div></div>
+        <div class="c-item"><span class="c-lbl">Instagram</span><div class="c-val"><a href="https://www.instagram.com/auraframing?igsh=MTE3azhlbG41MG1zZQ%3D%3D&utm_source=qr" target="_blank" rel="noopener">@auraframing ↗</a></div></div>
+        <div class="contact-hours">
+          <h3>Studio <em>Hours</em></h3>
+          <div class="hr-row"><span>Monday – Friday</span><span>10:00 AM – 7:00 PM</span></div>
+          <div class="hr-row"><span>Saturday</span><span>10:00 AM – 5:00 PM</span></div>
+          <div class="hr-row"><span>Sunday</span><span>By Appointment Only</span></div>
+        </div>
+      </div>
+      <!-- Right: form -->
+      <div class="reveal">
+        <div class="f-group"><label class="f-label">Your Name</label><input class="f-input" type="text" placeholder="Full name" /></div>
+        <div class="f-group"><label class="f-label">Email Address</label><input class="f-input" type="email" placeholder="your@email.com" /></div>
+        <div class="f-group"><label class="f-label">Phone Number</label><input class="f-input" type="tel" placeholder="+91 00000 00000" /></div>
+        <div class="f-group">
+          <label class="f-label">Subject</label>
+          <select class="f-select">
+            <option value="">What can we help with?</option>
+            <option>Wedding Photography Enquiry</option>
+            <option>Package Information</option>
+            <option>Branding Shoot</option>
+            <option>Modelling Shoot</option>
+            <option>Digital Marketing</option>
+            <option>Custom Quote</option>
+            <option>General Query</option>
+          </select>
+        </div>
+        <div class="f-group"><label class="f-label">Message</label><textarea class="f-textarea" placeholder="Share your thoughts or questions..."></textarea></div>
+        <button class="btn-sub" id="contactSubmit">Send Message</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="foot-top">
+      <div><div class="foot-brand-row"><img class="foot-logo" src="images/logo.png" alt="" onerror="this.style.display='none'" /><span class="foot-brand-name">AURA FRAMING</span></div><p class="foot-tagline">We're here whenever you're ready to begin.</p></div>
+      <div class="foot-col"><h4>Navigate</h4><a href="#" data-page="home">Home</a><a href="#" data-page="about">About</a><a href="#" data-page="services">Services</a><a href="#" data-page="packages">Packages</a><a href="#" data-page="booking">Book Now</a></div>
+      <div class="foot-col"><h4>Contact</h4><a href="mailto:auraframing22@gmail.com">auraframing22@gmail.com</a><a href="https://wa.me/917708697816">+91 77086 97816</a><a href="https://www.instagram.com/auraframing?igsh=MTE3azhlbG41MG1zZQ%3D%3D&utm_source=qr" target="_blank" rel="noopener">@auraframing ↗</a></div>
+    </div>
+    <div class="foot-bottom"><p class="foot-copy">© 2026 Aura Framing Events. All rights reserved.</p></div>
+  </footer>
+</div><!-- /page-contact -->
+
+
+<!-- SCRIPTS (load order matters) -->
+<script src="js/cursor.js"></script>
+<script src="js/loader.js"></script>
+<script src="js/reveal.js"></script>
+<script src="js/router.js"></script>
+<script src="js/testimonials.js"></script>
+<script src="js/faq.js"></script>
+<script src="js/forms.js"></script>
+<script src="js/mobile.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+/* =============================================
+   responsive.css — Mobile & Tablet breakpoints
+   All sections fully responsive
+   ============================================= */
+
+/* ── Tablet / Small Desktop (≤ 960px) ── */
+@media (max-width: 960px) {
+
+  /* Nav */
+  nav             { padding: 0 20px; height: 60px; }
+  .nav-links      { display: none; }
+  .hamburger      { display: flex; }
+
+  /* Hero */
+  .hero           { min-height: 100svh; }
+  .hero-logo-ring { width: 76px; height: 76px; }
+  .hero-logo-ring img { width: 52px; height: 52px; }
+  .hero-h1        { font-size: 2.6rem; letter-spacing: .04em; }
+  .hero-p         { font-size: .82rem; max-width: 90%; }
+  .hero-btns      { flex-direction: column; align-items: center; gap: 10px; }
+  .btn-gold, .btn-ghost { padding: 12px 28px; font-size: .62rem; width: 220px; text-align: center; }
+  .hero-scroll    { display: none; }
+
+  /* Sections */
+  .sec            { padding: 52px 22px; }
+  .cta-strip      { padding: 52px 22px; }
+
+  /* Feature split */
+  .feat-split     { grid-template-columns: 1fr; }
+  .feat-left      { padding: 52px 22px; }
+  .feat-right     { min-height: 260px; order: -1; }
+  .stats-row      { gap: 28px; }
+
+  /* Service cards (home) */
+  .svc-grid       { grid-template-columns: 1fr 1fr; }
+  .svc-card       { padding: 32px 20px; }
+
+  /* Gallery */
+  .gallery        { grid-template-columns: 1fr 1fr; }
+  .gal-item       { aspect-ratio: 1/1; }
+
+  /* About */
+  .about-split    { grid-template-columns: 1fr; }
+  .about-txt      { padding: 52px 22px; }
+  .about-img-wrap { min-height: 280px; }
+  .about-caption  { bottom: 16px; right: 16px; padding: 14px 18px; font-size: .82rem; max-width: 180px; }
+  .vals-grid      { grid-template-columns: 1fr 1fr; }
+  .team-grid      { grid-template-columns: 1fr 1fr; gap: 20px; }
+
+  /* Services page */
+  .svc-rows-wrap  { padding: 0 22px 52px; }
+  .svc-row        { grid-template-columns: 1fr; display: flex; flex-direction: column; }
+  .svc-row-img    { aspect-ratio: 16/9; order: 0; }
+  .svc-txt        { padding: 28px 0; order: 1; }
+  .svc-txt h2     { font-size: 1.7rem; }
+
+  /* Packages */
+  .pkg            { grid-template-columns: 1fr; }
+  .pkg-lft        { border-right: none; border-bottom: 1px solid rgba(201,169,110,.18); padding: 32px 22px; }
+  .pkg.feat .pkg-lft { border-bottom-color: rgba(201,169,110,.15); }
+  .pkg-rgt        { padding: 28px 22px; }
+  .pkg-items      { grid-template-columns: 1fr; }
+  .pkg-price      { font-size: 2.2rem; }
+
+  /* Careers */
+  .careers-two-col { grid-template-columns: 1fr; }
+  .perks-grid      { grid-template-columns: 1fr 1fr; }
+
+  /* Booking */
+  .book-grid      { grid-template-columns: 1fr; }
+
+  /* Contact */
+  .contact-grid   { grid-template-columns: 1fr; }
+
+  /* Forms */
+  .f-row          { grid-template-columns: 1fr; }
+
+  /* Footer */
+  footer          { padding: 44px 22px 28px; }
+  .foot-top       { grid-template-columns: 1fr 1fr; gap: 30px; }
+
+  /* Page hero */
+  .page-hero      { padding: 48px 22px 36px; min-height: 240px; }
+  .page-hero-title { font-size: 2.2rem; }
+}
+
+/* ── Mobile (≤ 600px) ── */
+@media (max-width: 600px) {
+
+  /* Hero */
+  .hero-h1        { font-size: 2.2rem; }
+
+  /* Home service cards — single column */
+  .svc-grid       { grid-template-columns: 1fr; }
+
+  /* Gallery */
+  .gallery        { grid-template-columns: 1fr 1fr; }
+  .gal-item       { aspect-ratio: 1/1; }
+
+  /* About */
+  .vals-grid      { grid-template-columns: 1fr; }
+  .team-grid      { grid-template-columns: 1fr; }
+
+  /* Careers */
+  .perks-grid     { grid-template-columns: 1fr; }
+  .job-row        { flex-wrap: wrap; gap: 8px; }
+
+  /* Footer */
+  .foot-top       { grid-template-columns: 1fr; }
+
+  /* Stats */
+  .stats-row      { gap: 20px; }
+}
