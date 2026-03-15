@@ -36,7 +36,7 @@
 /* HOME — Feature split */
 .feat-split { display: grid; grid-template-columns: 1fr 1fr; }
 .feat-left  { padding: 80px 64px; background: var(--iv); }
-.feat-right { min-height: 480px; background: url('https://iili.io/qcZaKml.jpg') center/cover; position: relative; }
+.feat-right { min-height: 480px; background: url('https://iili.io/qEGA1lp.jpg') center/cover; position: relative; }
 .feat-right-ov { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(201,169,110,.1), transparent); }
 
 /* ── ABOUT ── */
